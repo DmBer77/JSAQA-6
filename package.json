@@ -1,20 +1,20 @@
 {
-  "name": "jsaqa-6",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint",
-    "prettier": "prettier"
-  },
-  "author": "DmBer",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^11.2.0",
-    "prettier": "^2.8.0"
-  },
-  "devDependencies": {
-    "eslint": "7.1.0"
-  }
+    "name": "jsaqa-6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "eslint": "eslint",
+        "prettier": "prettier"
+    },
+    "author": "DmBer",
+    "license": "ISC",
+    "dependencies": {
+        "cypress": "^11.2.0",
+        "prettier": "^2.8.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.1.0"
+    }
 }
