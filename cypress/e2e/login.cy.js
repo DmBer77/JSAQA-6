@@ -17,7 +17,9 @@ describe('add books', () => {
         cy.get('.ml-auto > .ml-2').click();
     });
 
-    it('Should add one book successfully ', () => {
+    it.only('Should add one book successfully ', () => {
+        // cy.viewport(375, 812);
+        Cypress.env();
         cy.addBook('Идиот', 'Достоевский Ф.М.', '1');
         cy.contains('Идиот').should('be.visible');
     });
