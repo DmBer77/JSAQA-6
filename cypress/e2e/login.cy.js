@@ -18,8 +18,11 @@ describe('add books', () => {
     });
 
     it.only('Should add one book successfully ', () => {
-        // cy.viewport(375, 812);
-        Cypress.env();
+        cy.viewport(
+            Cypress.env('viewportWidth'),
+            Cypress.env('viewportHeight'),
+        );
+
         cy.addBook('Идиот', 'Достоевский Ф.М.', '1');
         cy.contains('Идиот').should('be.visible');
     });
