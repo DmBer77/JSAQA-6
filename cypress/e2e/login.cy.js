@@ -17,7 +17,7 @@ describe('add books', () => {
         cy.get('.ml-auto > .ml-2').click();
     });
 
-    it.only('Should add one book successfully ', () => {
+    it('Should add one book successfully ', () => {
         cy.viewport(
             Cypress.env('viewportWidth'),
             Cypress.env('viewportHeight'),
