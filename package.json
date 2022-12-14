@@ -6,7 +6,12 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "eslint": "eslint",
-        "prettier": "prettier"
+        "prettier": "prettier",
+        "test:headless": "cypress run ./cypress/e2e/login.cy.js",
+        "test:chrome1": "cypress run --headless --browser chrome --e2e ./cypress/e2e/login.cy.js",
+        "test:chrome2": "cypress run --headed --browser chrome --e2e --spec ./cypress/e2e/login.cy.js",
+        "test:edge1": "cypress run --headless --browser edge --e2e ./cypress/e2e/login.cy.js",
+        "test:edge2": "cypress run --headed --browser edge --e2e --spec ./cypress/e2e/login.cy.js"
     },
     "author": "DmBer",
     "license": "ISC",

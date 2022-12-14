@@ -1,1 +1,4 @@
 node_modules
+/.vscode
+cypress/video
+cypress/videos/login.cy.js.mp4
