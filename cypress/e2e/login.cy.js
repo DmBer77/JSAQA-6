@@ -44,4 +44,10 @@ describe('add books', () => {
             .should('be.visible')
             .and('contain', 'Тихий Дон');
     });
+
+    it('Should check to move the last book to Favorites', () => {
+        cy.addBook('Hamlet', 'William Shakespeare', '1');
+        cy.get('h4').click();
+        cy.get('a.mt-3').last().should('be.visible').and('contain', 'Hamlet');
+    });
 });
